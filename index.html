@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Supermarkt Kasse — Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <main class="products">
+      <header>
+        <h1>Produkte</h1>
+      </header>
+      <div id="productGrid" class="product-grid"></div>
+    </main>
+
+    <aside class="cart">
+      <h2>Warenkorb</h2>
+      <ul id="cartList" class="cart-list"></ul>
+
+      <div class="sum-row">
+        <span>Summe</span>
+        <strong id="total">0,00 €</strong>
+      </div>
+
+      <div class="payment-row">
+        <button id="barBtn" class="method">BAR</button>
+        <button id="cardBtn" class="method">KARTE</button>
+      </div>
+
+      <button id="payBtn" class="pay">Bezahlen</button>
+    </aside>
+  </div>
+
+  <!-- Cash payment modal / num-pad -->
+   <!--
+  <div id="cashModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-panel">
+      <div class="modal-header">
+        <h3>Barzahlung</h3>
+        <button id="closeCash" class="close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="amount-row">
+          <div>Zu bezahlen</div>
+          <div id="modalTotal" class="big">0,00 €</div>
+        </div>
+
+        <div class="amount-row">
+          <div>Eingegeben</div>
+          <div id="entered" class="big">0,00 €</div>
+        </div>
+
+        <div class="amount-row">
+          <div>Geld zurück</div>
+          <div id="change" class="big">0,00 €</div>
+        </div>
+
+        <div class="numpad" id="numpad">
+          <button class="key">7</button>
+          <button class="key">8</button>
+          <button class="key">9</button>
+          <button class="key">4</button>
+          <button class="key">5</button>
+          <button class="key">6</button>
+          <button class="key">1</button>
+          <button class="key">2</button>
+          <button class="key">3</button>
+          <button class="key">0</button>
+          <button class="key">.</button>
+          <button class="key" id="clearKey">C</button>
+        </div>
+    
+        <div class="modal-actions">
+          <button id="confirmCash" class="pay">Bestätigen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+  <script src="app.js"></script>
+</body>
+</html>
